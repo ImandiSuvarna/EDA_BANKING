@@ -29,11 +29,6 @@ df.duplicated().sum()
 df.drop_duplicates(inplace=True)
 
 Outlier detection
-# IQR method
-Q1, Q3 = df[col].quantile(0.25), df[col].quantile(0.75)
-IQR = Q3 - Q1
-outliers = df[(df[col] < Q1 - 1.5*IQR) | (df[col] > Q3 + 1.5*IQR)]
-
 
 Step 5 — Bivariate & Multivariate Analysis
 Understand relationships between variables:
