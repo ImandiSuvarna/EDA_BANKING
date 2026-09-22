@@ -55,19 +55,4 @@ pd.crosstab(df['occupation'], df['Exited'], normalize='index')
 
 
 
-#Workflow
-
-┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌──────────────┐
-│  1. Define  │───▶│  2. Load    │───▶│  3. Clean   │───▶│  4. Univariate│
-│  Problem    │    │  Data       │    │  Data       │    │  Analysis    │
-└─────────────┘    └─────────────┘    └─────────────┘    └──────────────┘
-                                                                │
-┌─────────────┐    ┌─────────────┐    ┌──────────────┐         │
-│  9. Report  │◀───│  8. Segment │◀───│  7. Engineer │◀────────┘
-│  & Deploy   │    │  & Trend    │    │  Features    │
-└─────────────┘    └─────────────┘    └──────────────┘
-                          ▲
-┌─────────────────────────┴──────────────┐
-│  5. Bivariate / Multivariate Analysis  │
-│  6. Correlation & Relationship Mapping │
-└────────────────────────────────────────┘   
+  
